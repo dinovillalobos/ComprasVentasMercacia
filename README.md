@@ -1,7 +1,8 @@
 # ComprasVentasMercacia
 Una plataforma web para la compraventa de mercancías.
-González Pablo Aarón
-Zárate Morales Miguel Angel
-Duarte Gutierrez Rodrigo Yael
-Reyes Hernandez Axel David
-Martinez Romero Said Emiliano
++ Dominguez Villaobos Ricardo
++ Duarte Gutierrez Rodrigo Yael
++ González Pablo Aarón
++ Martinez Romero Said Emiliano
++ Reyes Hernandez Axel David
++ Zárate Morales Miguel Angel
