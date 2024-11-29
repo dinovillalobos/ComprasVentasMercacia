@@ -122,4 +122,14 @@ function limpiarHTML() {
     }
 }
 
+// Seleccionar el botón de pagar
+const btnPagar = document.getElementById('pagar');
+
+// Agregar evento de clic para redirigir a la página de pago
+btnPagar.addEventListener('click', () => {
+    // Cambia 'pagina_de_pago.html' por la URL de tu página de pago
+    window.location.href = 'IndexPago.html';
+});
+
+
 

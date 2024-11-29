@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de Producto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pago del Producto</h1>
+    </header>
+    <main>
+        <section class="product-details">
+            <h2>Detalles del Producto</h2>
+            <p><strong>Producto:</strong> Producto X</p>
+            <p><strong>Precio:</strong> $50.00</p>
+        </section>
+        <section class="payment-form">
+            <h2>Información de Pago</h2>
+            <form id="paymentForm">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="cardNumber">Número de Tarjeta:</label>
+                <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
+                
+                <label for="expiryDate">Fecha de Expiración:</label>
+                <input type="month" id="expiryDate" name="expiryDate" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" name="cvv" maxlength="3" required>
+                
+                <button type="submit">Pagar Ahora</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Tienda</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
