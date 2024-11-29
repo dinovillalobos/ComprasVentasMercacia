@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="stylecomp.css">
+    <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
+
+    <title>Amazon 2</title> 
+    
+   
+</head>
+<body>
+
+    <!--Aqui esta el boton de inicio de sesion-->
+    <button id="btn-iniciar-sesion">Iniciar Sesión</button>
+    <div class="container">
+        <nav id="carrito">
+            <div class="center-text">AMAZON 2</div>
+             
+
+            <i class="fa-solid fa-cart-shopping"> 
+                <div class="buy-card">
+                    <ul class="nav-card">
+                        <li>Nombre</li>
+                        <li>Precio</li>
+                        <li>Cantidad</li>
+                        <li></li> 
+                    </ul>
+                    <div class="lista_de_productos">
+                    </div>
+                    <button id="vaciar_carrito">VACIAR CARRITO</button> 
+                </div>
+            </i>
+        </nav>
+        <img src="/img/img1.jpg" alt="Descripción de la imagen" width="1349" height="500">
+
+        <h1>Productos</h1>
+        <div class="grid" id="lista-productos">
+            <div class="items">
+                <div class="info">
+                   <h3>Xbox</h3>  
+                    <div class="precio">
+                        <p>$300</p> 
+                    </div>
+                    <button class="agregar-carrito" data-id="1">Agregar al Carrito</button> 
+                </div>
+            </div>
+            <div class="items">
+                <div class="info">
+                    <h3>Sudadera</h3>
+                    <div class="precio">
+                        <p>$300</p> 
+                    </div>
+                    <button class="agregar-carrito" data-id="2">Agregar al Carrito</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="carrito.js" ></script>
+
+    <!--Aqui se encunetra el Script del boton de inicio de sesion, arreglarlo-->
+    <script>
+        document.getElementById('btn-iniciar-sesion').addEventListener('click', () => {
+            window.location.href = 'indexSesion.html'; //Ruta de acceso del Archivo
+        });
+    </script>
+    <script src="carrito.js"></script>
+</body>
+</html>
