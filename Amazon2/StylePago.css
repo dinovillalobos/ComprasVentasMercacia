@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #d0d0d0;
+}
+.Pago{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 25px;
+}
+.product-details{
+    width: 400px; 
+    background: #24303c; 
+    padding: 30px; 
+    margin: auto; 
+    margin-top: 70px;
+    border-radius: 4px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white; 
+    box-shadow: 7px 13px 37px #ffffff;
+    border-radius: 10px
+}
+.product-details h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.product-details p{
+    margin: 12px;
+    font-size: 20px;
+}
+
+/*informacion de pago*/
+
+.payment-form{
+    width: 400px; 
+    background: #24303c; 
+    padding: 30px; 
+    margin: auto; 
+    margin-top: 60px;
+    border-radius: 4px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white; 
+    box-shadow: 7px 13px 37px #ffffff;
+    border-radius: 10px
+}
+.payment-form h2{
+    text-align: center;
+}
+.pagar{
+    padding: 1rem; 
+    width: 100%; 
+    background-color: #04bd7d; 
+    border: none; 
+    outline: none; 
+    color: #ffffff;
+    font-size: 23px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-bottom: 5px;
+}

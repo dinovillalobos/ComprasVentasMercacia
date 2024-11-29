@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pago de Producto</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Amazon 2</title>
+    <link rel="stylesheet" href="StylePago.css">
 </head>
 <body>
-    <header>
+    <header class="Pago">
         <h1>Pago del Producto</h1>
     </header>
     <main>
@@ -19,19 +19,20 @@
         <section class="payment-form">
             <h2>Información de Pago</h2>
             <form id="paymentForm">
-                <label for="name">Nombre Completo:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="cardNumber">Número de Tarjeta:</label>
-                <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
-                
-                <label for="expiryDate">Fecha de Expiración:</label>
-                <input type="month" id="expiryDate" name="expiryDate" required>
-                
-                <label for="cvv">CVV:</label>
-                <input type="password" id="cvv" name="cvv" maxlength="3" required>
-                
-                <button type="submit">Pagar Ahora</button>
+                <div class="form-pago">
+                    <input type="text" id="name" placeholder="Nombre Completo" name="name" required>
+                </div>
+                <div class="form-pago">
+                    <input type="text" id="cardNumber" placeholder="Número de Tarjeta" name="cardNumber" maxlength="16" required>
+                </div>
+                <div class="form-pago">
+                    <p for="expiryDate">Fecha de Expiración:</p>
+                    <input type="month" id="expiryDate" name="expiryDate" required>
+                </div>
+                <div class="form-pago">
+                    <input type="password" id="cvv" placeholder="CVV" name="cvv" maxlength="3" required>
+                </div>
+                <button class="pagar" type="submit">Pagar Ahora</button>
             </form>
         </section>
     </main>
