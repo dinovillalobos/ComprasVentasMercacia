@@ -4,3 +4,5 @@ document.getElementById('btn-iniciar-sesion').addEventListener('click', () => {
 document.getElementById('btn-vender').addEventListener('click', () =>{
     window.location.href = 'IndexVen.html';
 })
+
+
