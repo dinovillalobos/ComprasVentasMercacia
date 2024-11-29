@@ -75,6 +75,8 @@ body{
 .payment-form h2{
     margin-bottom: 20px;
     font-size: 30px;
+    text-align: center;
+    align-items: center;
 }
 .form-pago{
     background-color: #515966;
@@ -90,6 +92,7 @@ body{
 input::placeholder{
     color: #ffffff;
     text-align: center;
+    font-size: 15px;
 }
 
 .FechaPago{
@@ -104,7 +107,7 @@ input::placeholder{
     align-items: center;
 }
 .FechaPago p{
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     align-items: center;
 }
