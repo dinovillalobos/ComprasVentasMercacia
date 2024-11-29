@@ -4,6 +4,8 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     text-decoration: none;
+    text-align: center;
+    align-items: center;
 }
 body{
     background-color: #d0d0d0;
@@ -28,6 +30,7 @@ body{
 .product-details h2{
     text-align: center;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 .product-details p{
     margin: 12px;
@@ -41,25 +44,67 @@ body{
     background: #24303c; 
     padding: 30px; 
     margin: auto; 
-    margin-top: 60px;
+    margin-top: 70px;
     border-radius: 4px; 
     font-family: Arial, Helvetica, sans-serif; 
     color: white; 
     box-shadow: 7px 13px 37px #ffffff;
     border-radius: 10px
 }
+
 .payment-form h2{
-    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
 }
-.pagar{
-    padding: 1rem; 
-    width: 100%; 
-    background-color: #04bd7d; 
-    border: none; 
-    outline: none; 
+.form-pago{
+    background-color: #515966;
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input::placeholder{
     color: #ffffff;
-    font-size: 23px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    margin-bottom: 5px;
+}
+
+.FechaPago{
+    background-color: #515966;
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+.FechaPago p{
+    font-size: 14px;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: #ffffff;
+}
+
+.pagar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: #04bd7d;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 20px;
+
 }

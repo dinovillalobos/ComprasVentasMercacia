@@ -16,28 +16,25 @@
             <p><strong>Producto:</strong> Producto X</p>
             <p><strong>Precio:</strong> $50.00</p>
         </section>
-        <section class="payment-form">
+        <div class="payment-form">
             <h2>Información de Pago</h2>
-            <form id="paymentForm">
+            <form class="CuadrosTexto" id="paymentForm">
                 <div class="form-pago">
                     <input type="text" id="name" placeholder="Nombre Completo" name="name" required>
                 </div>
                 <div class="form-pago">
                     <input type="text" id="cardNumber" placeholder="Número de Tarjeta" name="cardNumber" maxlength="16" required>
                 </div>
-                <div class="form-pago">
+                <div class="FechaPago">
                     <p for="expiryDate">Fecha de Expiración:</p>
                     <input type="month" id="expiryDate" name="expiryDate" required>
                 </div>
                 <div class="form-pago">
                     <input type="password" id="cvv" placeholder="CVV" name="cvv" maxlength="3" required>
                 </div>
-                <button class="pagar" type="submit">Pagar Ahora</button>
             </form>
-        </section>
+            <button class="pagar" type="submit">Pagar Ahora</button>
+        </div>
     </main>
-    <footer>
-        <p>&copy;</p>
-    </footer>
 </body>
 </html>
