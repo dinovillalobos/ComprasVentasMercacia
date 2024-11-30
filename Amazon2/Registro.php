@@ -1,33 +1,32 @@
+<?php
+// Configuración de conexión
+$servidor = "localhost";
+$usuario = "root";
+$password = "";
+$bd = "usuarios_db";
 
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "usuarios";
+// Crear conexión
+$conn = new mysqli($servidor, $usuario, $password, $bd);
 
-        // Crear conexión
-        $conn = new mysqli($servername, $username, $password, $dbname);
+// Verificar conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+echo "Conexión exitosa a la base de datos";
 
-        // Verificar conexión
-        if ($conn->connect_error) {
-            die("Conexión fallida: " . $conn->connect_error);
-        }
+// Obtener datos del formulario
+$nombre = $_POST['nombre'];
+$correo = $_POST['correo'];
+$contraseña = password_hash($_POST['contraseña'], PASSWORD_BCRYPT); // Encriptar contraseña
 
-        $nombre = $_POST['nombre'];
-        $email = $_POST['email'];
-        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+// Insertar datos en la tabla
+$sql = "INSERT INTO registro (nombre, correo, contraseña) VALUES ('$nombre', '$correo', '$contraseña')";
+if ($conn->query($sql) === TRUE) {
+    echo "Registro exitoso";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
-        $sql = "INSERT INTO usuarios (nombre, email, password) VALUES ('$nombre', '$email', '$password')";
-
-        if ($conn->query($sql) === TRUE) {
-            echo "Registro exitoso";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
-
-        $conn->close();
-    }
-    ?>
-</body>
-</html>
+// Cerrar conexión
+$conn->close();
+?>
