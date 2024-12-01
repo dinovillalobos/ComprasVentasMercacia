@@ -1,4 +1,4 @@
-#Inicio Sesión 
+# Inicio Sesión 
 
 -**Pagina Principal**: En este apartado el usuario inicia sesión y dependiendo lo que quiera hacer se va hacia el apartado de Compra o Venta de productos. 
 
