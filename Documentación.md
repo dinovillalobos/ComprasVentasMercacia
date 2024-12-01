@@ -1,3 +1,11 @@
+#Inicio Sesión 
+
+-**Pagina Principal**: En este apartado el usuario inicia sesión y dependiendo lo que quiera hacer se va hacia el apartado de Compra o Venta de productos. 
+
+-**Registro**: En este apartado el usuario que no tenga una cuanta registrada en nuestra página podría registrarse de manera fácil y rápida. 
+
+-**Inicio de Sesión**: En este apartado es donde ya con una cuenta previamente registrada podrá iniciar sesión y acceder a la página con total normalidad. 
+
 # Compradores
 
 -**Pagina principal**: En este apartado el usuario una vez iniciada sesión podra ver, añadir al carrito y comprar los productos ofrecidos en la pagina.
