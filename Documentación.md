@@ -1,6 +1,6 @@
-#Compradores
+# Compradores
 
-- **Pagina principal**: En este apartado el usuario una vez iniciada sesión podra ver, añadir al carrito y comprar los productos ofrecidos en la pagina.
+**Pagina principal**: En este apartado el usuario una vez iniciada sesión podra ver, añadir al carrito y comprar los productos ofrecidos en la pagina.
 
 -**Productos**: Estos productos mostraran una imagen alusiva al producto ofrecido, nombre del producto ofrecido, costo del producto y por ultimo un botón para añadir el producto al "Carrito". 
 
