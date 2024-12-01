@@ -10,6 +10,7 @@ signIn.onclick = function(){
     signIn.classList.remove("disable");
     document.getElementById("botonR").innerText = 'Entrar';
 }
+
 signUp.onclick = function(){
     nameInput.style.maxHeight = "60px";
     title.innerHTML = "Registro";
@@ -23,17 +24,58 @@ const correo = document.getElementById("email");
 const contraseña = document.getElementById("password");
 const boton = document.getElementById("botonR");
 
+// Evento para registro
+boton.addEventListener('click', async (e) => {
+    e.preventDefault();
 
-boton.addEventListener ('click', (e) =>{
-    e.preventDefault()
     const datos = {
-        Nombre: nombre.value,
-        Correo: correo.value,
-        contraseña: contraseña.value
+        nombre: nombre.value,
+        correo: correo.value,
+        contraseña: contraseña.value,
+        rol: signUp.classList.contains("disable") ? "comprador" : "vendedor"
+    };
+
+    try {
+        const response = await fetch('http://localhost:3000/register', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(datos),
+        });
+
+        const result = await response.json();
+        alert(result.message);
+    } catch (error) {
+        console.error('Error:', error);
     }
-    console.log(datos)
-    document.getElementById("name").value = '';
-    document.getElementById("email").value = '';
-    document.getElementById("password").value = '';
-    
-})
+});
+
+// Evento para login
+document.getElementById('botonR').addEventListener('click', async (e) => {
+    e.preventDefault();
+
+    if (signIn.classList.contains("disable")) return;
+
+    const datos = {
+        correo: correo.value,
+        contraseña: contraseña.value,
+    };
+
+    try {
+        const response = await fetch('http://localhost:3000/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(datos),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            alert(result.message);
+            console.log('Token:', result.token); // Guarda el token si es necesario
+        } else {
+            alert(result.message);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+});
